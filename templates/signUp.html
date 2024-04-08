@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -12,15 +12,20 @@
         crossorigin="anonymous"></script>
 </head>
 
-<html>
+<a id="img_nav" href="{{ url_for('home')}}"><img src="{{ url_for('static', filename='images/images.png') }}"
+        alt="UVM logo" class="left"></a>
+<nav id="nav_grid">
+    <section class="nav_section">
+        <a href="{{ url_for('login')}}" class="right">Log In</a>
+        <a href="{{ url_for('signUp')}}" class="right">Sign Up</a>
+    </section>
+</nav>
 
-<head>
-    <title>{{ mytitle }}</title>
-</head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row">
-    <h1>Hello, world!</h1>
-    <p>{{ mycontent }}</p>
+<body>
+    <main>
+        <h1>signUp</h1>
+    </main>
 </body>
 
 </html>
